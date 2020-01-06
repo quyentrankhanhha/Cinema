@@ -23,7 +23,8 @@ $(document).ready(function () {
         }
         price = defaultPrice * total;
         $('.total').text("Total: " + total);
-        $('.snumber').remove();
-        $('.snumber').append(`${selected},`);
+        $('.price').text("Price: " + price);
+        $("p").remove('.snumber');
+        $('.sum').append(`<p class="snumber"> Seat: ${selected},</p>`);
     })
 });
