@@ -57,31 +57,22 @@ a:hover {
   background-color: #ddd;
 }
 
-.seats {
-  display: grid;
-  grid-template-columns: repeat(2, 15px) 60px repeat(4, 15px) 60px repeat(4, 15px) 60px repeat(3, 15px);
-  grid-gap: 10px;
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+.news .bigInfor {
+  background-image: url("../img/it.jpg");
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.seats .seat {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: lightgrey;
-  transition: all 0.13s;
+.news .bigInfor img {
+  height: 400px;
 }
-.seats .seat:hover:not(.booked) {
-  background: #384e95;
+.news .column1 {
+  flex: 30%;
+  padding: 10px;
 }
-.seats .booked {
-  background: #c7a636;
-}
-.seats .selected {
-  background: red;
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
+.news .column2 {
+  flex: 70%;
+  padding: 10px;
+  margin-left: 10px;
 }
 
 .map-responsive {
@@ -142,19 +133,5 @@ footer .form-control {
     display: none;
   }
 }
-@keyframes pulse {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
 
-/*# sourceMappingURL=booking.css.map */
+/*# sourceMappingURL=news.css.map */

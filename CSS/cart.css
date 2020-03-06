@@ -1,0 +1,143 @@
+a* {
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.my-nav {
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  background-color: black;
+}
+.my-nav .navbar-nav {
+  padding-right: 5rem;
+  align-items: baseline;
+}
+.my-nav .navbar-nav img {
+  height: 35px;
+  width: 35px;
+  border-radius: 999px;
+  margin: 0 10px;
+}
+.my-nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.my-nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+.my-nav .dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  background: none;
+}
+.my-nav .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+.my-nav .dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+.my-nav .dropdown .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+#header {
+  background: url("../img/cart.jpg");
+  max-width: 100%;
+}
+#header .title {
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+  padding: 80px 0;
+  display: inline-block;
+}
+
+.my-container {
+  margin: 30px auto;
+  padding: 0 15em;
+}
+.my-container div .credits {
+  margin: auto;
+}
+.my-container div .credits::before {
+  content: "Get ";
+}
+.my-container div .credits::after {
+  content: " credits for this booking";
+}
+.my-container div button {
+  width: 20%;
+  background-color: #ffa500;
+  border: #ffa500;
+}
+.my-container div button a {
+  text-decoration: none;
+  color: white;
+}
+.my-container div button:hover {
+  background-color: #ffa500;
+  border: #ffa500;
+}
+
+.title {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 2.5em;
+  cursor: pointer;
+}
+
+footer .my-container {
+  margin: 30px auto 0 auto;
+  background: black no-repeat;
+}
+footer .my-container .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+footer .my-container .line {
+  width: 80px;
+  height: 1px;
+  background: red;
+  margin: 0 auto;
+}
+footer .my-container ul {
+  list-style: none;
+  color: silver;
+}
+footer .my-container form {
+  padding-left: 9.5rem;
+}
+footer .my-container button {
+  color: white !important;
+  background: #ffa500 !important;
+  float: right;
+  width: 45% !important;
+}
+footer .my-container .form-control {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .my-nav .dropdown {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=cart.css.map */

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Booking</title>
+    <title>Cart</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/62f99286f5.js"></script>
-    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="../CSS/cart.css">
 </head>
 
 <body>
     <div class="container-fluid">
         <nav class="my-nav navbar sticky-top navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="page.html">
-                <img src="img/cgvlogo.png">
+                <img src="../img/cgvlogo.png">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,13 +26,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto mt-2 mt-lg-0 mr-3">
-                    <div class="nav-item nav-link text-white" href="#">Ha Quyen <img src="img/ha.jpg"><span
+                    <div class="nav-item nav-link text-white" href="#">Ha Quyen <img src="../img/ha.jpg"><span
                             class="sr-only">(current)</span></div>
                     <div class="nav-item nav-link text-white" href="#">My tickets</div>
                     <div class="nav-item nav-link dropdown" href="#">
                         <button class="dropbtn text-white"><i class="fas fa-align-justify"></i></button>
                         <div class="dropdown-content">
-                            <a href="#">Link 1</a>
+                            <a href="">News</a>
                             <a href="#">Link 2</a>
                             <a href="#">Link 3</a>
                         </div>
@@ -41,28 +41,38 @@
             </div>
         </nav>
     </div>
-    <div class="my-container d-block">
-        <h3>order ticket(s)</h3>
-        <br>
-        <h3>seat</h3>
-        <div class="seats"></div>
-        <div class="sum">
-            <h5>Tickets infor</h5>
-            <p class="total">Total:</p>
-            <p class="price">Price:</p>
-            <p class="snumber">Seats: </p>
-            <button type="button" class="btn btn-primary btn-block">Confirm</button>
+    <div id="header">
+        <div class="container">
+            <h1 class="title">Cart</h1>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="map-responsive">
-            <iframe
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France"
-                width="650" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+    <div class="my-container">
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Seats</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="date"></td>
+                        <td class="seats"></td>
+                        <td class="total"></td>
+                        <td class="price"></td>
+                    </tr>
+            </table>
+        </div>
+        <div class="row">
+            <p class="col-9 text-right credits"></p>
+            <button type="button" class="col-3 btn btn-primary"><a href="../HTML/cart.html">Pay now</a></button>
         </div>
     </div>
     <footer>
-        <div class="my-container">
+        <div class="my-container py-3">
             <div class="row">
                 <div class="col-2">
                     <p class="text-uppercase text-white title">menu</p>
@@ -117,8 +127,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="booking.js">
-    </script>
+    <script src="../JS/cart.js"></script>
+
 </body>
 
 </html>

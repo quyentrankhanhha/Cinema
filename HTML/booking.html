@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Booking</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/62f99286f5.js"></script>
+    <link rel="stylesheet" href="../CSS/booking.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="my-nav navbar sticky-top navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="page.html">
+                <img src="../img/cgvlogo.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="text-white"><i class="fas fa-align-justify"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto mt-2 mt-lg-0 mr-3">
+                    <div class="nav-item nav-link text-white" href="#">Ha Quyen <img src="../img/ha.jpg"><span
+                            class="sr-only">(current)</span></div>
+                    <div class="nav-item nav-link text-white" href="#">My tickets</div>
+                    <div class="nav-item nav-link dropdown" href="#">
+                        <button class="dropbtn text-white"><i class="fas fa-align-justify"></i></button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="my-container s d-block">
+        <h3 class="text-uppercase py-3">order ticket(s)</h3>
+        <br>
+        <h3 class="text-uppercase">seat</h3>
+        <hr style="width: 80%">
+        <p style="color:darkgray" class="text-center">Screen</p>
+        <div class="seats"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="seat"></div>
+                    <p>Available</p>
+                </div>
+                <div class="col">
+                    <div class="seat booked"></div>
+                    <p>Unvailable</p>
+                </div>
+                <div class="col">
+                    <div class="seat selected"></div>
+                    <p>Selected</p>
+                </div>
+            </div>
+        </div>
+        <div class="sum py-3">
+            <h5>Tickets infor</h5>
+            <p class="total">Total:</p>
+            <p class="price">Price:</p>
+            <p class="snumber">Seats: </p>
+            <a href="../HTML/cart.html"><button type="button" class="btn btn-primary btn-block">Add to cart</button></a>
+        </div>
+    </div>
+    <footer>
+        <div class="my-container py-3">
+            <div class="row">
+                <div class="col-2">
+                    <p class="text-uppercase text-white title">menu</p>
+                    <div class="line"></div>
+                    <ul class="my-4 pl-1">
+                        <li>Home</li>
+                        <li>Coming soon</li>
+                        <li>Order</li>
+                        <li>Terms</li>
+                        <li>Pricing</li>
+                        <li class="color mt-3"><i class="fab fa-facebook-f px-1"></i><i
+                                class="fab fa-twitter px-1"></i><i class="fab fa-instagram px-1"></i></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <p class="text-uppercase text-white title">address information</p>
+                    <div class="line"></div>
+                    <ul class="my-4 pl-1">
+                        <li>Kajaanintie 32 D 45, Oulu, 90130, Finland</li>
+                        <li><i class="fas fa-envelope pr-1 pt-4"></i>haquyen@gmail.com</li>
+                        <li><i class="fas fa-phone pr-1"></i>0123455678</li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <p class="text-uppercase text-white title">leave a message</p>
+                    <div class="line"></div>
+                    <form class="mt-4">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn">SEND TO US</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="../JS/booking.js"></script>
+</body>
+
+</html>
